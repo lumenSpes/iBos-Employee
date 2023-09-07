@@ -1,0 +1,48 @@
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\appsettings.Development.json
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\appsettings.json
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\iBos - Employee.exe
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\iBos - Employee.deps.json
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\iBos - Employee.runtimeconfig.json
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\iBos - Employee.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\iBos - Employee.pdb
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\AutoMapper.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Microsoft.OpenApi.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\BLL.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\DAL.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\BLL.pdb
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\DAL.pdb
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.csproj.AssemblyReference.cache
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.GeneratedMSBuildEditorConfig.editorconfig
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.AssemblyInfoInputs.cache
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.AssemblyInfo.cs
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.csproj.CoreCompileInputs.cache
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.MvcApplicationPartsAssemblyInfo.cs
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.MvcApplicationPartsAssemblyInfo.cache
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\staticwebassets\msbuild.iBos - Employee.Microsoft.AspNetCore.StaticWebAssets.props
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\staticwebassets\msbuild.build.iBos - Employee.props
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.iBos - Employee.props
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.iBos - Employee.props
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\staticwebassets.pack.json
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\staticwebassets.build.json
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\staticwebassets.development.json
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\scopedcss\bundle\iBos - Employee.styles.css
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.csproj.CopyComplete
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\refint\iBos - Employee.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.pdb
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.genruntimeconfig.cache
+G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\ref\iBos - Employee.dll
