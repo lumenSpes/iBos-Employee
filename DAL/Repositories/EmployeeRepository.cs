@@ -77,13 +77,12 @@ namespace DAL.Repositories
         public List<string> GetOnHierarchy(int id)
         {
             var hierarchy = new List<string>();
-            var visitedIds = new HashSet<int>(); // To detect circular references
+            var visitedIds = new List<int>(); 
 
             while (id != 0)
             {
                 if (visitedIds.Contains(id))
                 {
-                    // Handle circular reference (e.g., throw an exception or log an error)
                     break;
                 }
 
@@ -91,17 +90,14 @@ namespace DAL.Repositories
 
                 if (employee == null)
                 {
-                    // Handle employee not found (e.g., throw an exception or log an error)
                     throw new Exception("Employee not found");
                 }
 
                 hierarchy.Add(employee.EmployeeName);
-                visitedIds.Add(id); // Mark the current employee as visited
+                visitedIds.Add(id); 
                 id = employee.SupervisorId;
             }
 
-            // You may or may not need to reverse the hierarchy based on your database structure
-            // hierarchy.Reverse();
 
             return hierarchy;
         }

@@ -37,7 +37,7 @@ namespace iBos___Employee.Controllers
             }
         }
 
-        [HttpPut("{id}")] // Specify a route parameter to make this action unique
+        [HttpPut("{id}")] 
         public IActionResult Update(int id, EmployeeDTO employeeDTO)
         {
             employeeDTO.EmployeeId = id;
@@ -54,7 +54,7 @@ namespace iBos___Employee.Controllers
             }
         }
 
-        [HttpGet("ThirdHighestSal")] // Specify a unique route
+        [HttpGet("ThirdHighestSal")] 
         public IActionResult ThirdHighestSal()
         {
             var data = EmployeeService.Get3rd();
@@ -68,7 +68,7 @@ namespace iBos___Employee.Controllers
             }
         }
 
-        [HttpGet("GetOnAbcent")] // Specify a unique route
+        [HttpGet("GetOnAbcent")] 
         public IActionResult GetOnAbcent()
         {
             var data = EmployeeService.GetOnAbsent();
@@ -82,7 +82,7 @@ namespace iBos___Employee.Controllers
             }
         }
 
-        [HttpGet("GetByHierarchy/{id}")] // Specify a unique route with a parameter
+        [HttpGet("GetByHierarchy/{id}")] 
         public IActionResult GetByHierarchy(int id)
         {
             var data = EmployeeService.GetEmployeeHierarchy(id);

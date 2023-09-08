@@ -14,22 +14,25 @@ namespace BLL.Services
         {
             var reports = new List<GetOnMonthlyAttendenceDTO>();
 
-            // Assuming you have a database context called 'db'
             var employees = DataAccessFactory.EmployeeData().Get();
+
+            var currentMonth = DateTime.Now.Month;
+            var currentYear = DateTime.Now.Year;
 
             foreach (var employee in employees)
             {
-                // Retrieve the attendance records for the employee for a specific month (e.g., September)
                 var attendanceRecords = DataAccessFactory.AttendenceData().Get()
-                    .Where(a => a.EmployeeId == employee.EmployeeId && a.AttendenceDate.Month == DateTime.Now.Month)
+                    .Where(a => a.EmployeeId == employee.EmployeeId &&
+                                a.AttendenceDate.Month == currentMonth &&
+                                a.AttendenceDate.Year == currentYear)
                     .ToList();
+                Console.WriteLine(attendanceRecords);
 
-                // Calculate the report data
                 var report = new GetOnMonthlyAttendenceDTO
                 {
                     EmployeeName = employee.EmployeeName,
-                    MonthName = DateTime.Now.ToString("MMMM"), // Replace with the actual month name
-                    PayableSalary = employee.EmployeeSalary, // Replace with the actual logic for calculating payable salary
+                    MonthName = DateTime.Now.ToString("MMMM"), 
+                    PayableSalary = employee.EmployeeSalary, 
                     TotalPresent = attendanceRecords.Count(a => a.IsPresent == 1),
                     TotalAbsent = attendanceRecords.Count(a => a.IsAbsent == 1),
                     TotalOffday = attendanceRecords.Count(a => a.IsOffday == 1),
@@ -40,5 +43,6 @@ namespace BLL.Services
 
             return reports;
         }
+
     }
 }
