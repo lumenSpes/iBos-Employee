@@ -6,7 +6,7 @@ using System.Net;
 namespace iBos___Employee.Controllers
 {
     [ApiController]
-    [Route("api/[controllr]")]
+    [Route("api/[controller]")]
     public class AttendenceController : Controller
     {
         [HttpGet]
@@ -22,7 +22,8 @@ namespace iBos___Employee.Controllers
                 return NotFound("Attendence Not Found");
             }
         }
-        [HttpGet]
+
+        [HttpGet("{id}")] 
         public IActionResult Get(int id)
         {
             var data = AttendenceService.Get(id);
@@ -35,6 +36,7 @@ namespace iBos___Employee.Controllers
                 return NotFound("Attendence Not Found");
             }
         }
+
         [HttpPost]
         public IActionResult Create(EmployeeAttendenceDTO attendenceDTO)
         {

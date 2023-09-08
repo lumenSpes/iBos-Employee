@@ -59,7 +59,7 @@ namespace BLL.Services
 
             if (isSuccess)
             {
-                var createAttendence = DataAccessFactory.EmployeeData().Get(attendence.Id);
+                var createAttendence = DataAccessFactory.AttendenceData().Get(attendence.Id);
 
                 var createAttendenceDTO = mapper.Map<EmployeeAttendenceDTO>(createAttendence);
 

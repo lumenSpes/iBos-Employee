@@ -22,8 +22,9 @@ namespace iBos___Employee.Controllers
                 return NotFound("Employee Not Found");
             }
         }
+
         [HttpPost]
-        public IActionResult Create(EmployeeDTO employeeDTO) 
+        public IActionResult Create(EmployeeDTO employeeDTO)
         {
             var data = EmployeeService.Create(employeeDTO);
             if (data != null)
@@ -35,7 +36,8 @@ namespace iBos___Employee.Controllers
                 return BadRequest("Please try again");
             }
         }
-        [HttpPut]
+
+        [HttpPut("{id}")] // Specify a route parameter to make this action unique
         public IActionResult Update(int id, EmployeeDTO employeeDTO)
         {
             employeeDTO.EmployeeId = id;
@@ -51,8 +53,9 @@ namespace iBos___Employee.Controllers
                 return BadRequest("Please try again");
             }
         }
-        [HttpGet]
-        public IActionResult ThirdHighestSal() 
+
+        [HttpGet("ThirdHighestSal")] // Specify a unique route
+        public IActionResult ThirdHighestSal()
         {
             var data = EmployeeService.Get3rd();
             if (data != null)
@@ -61,11 +64,12 @@ namespace iBos___Employee.Controllers
             }
             else
             {
-                return NotFound("Nor Record Found!");
+                return NotFound("No Record Found!");
             }
         }
-        [HttpGet]
-        public IActionResult GetOnAbcent() 
+
+        [HttpGet("GetOnAbcent")] // Specify a unique route
+        public IActionResult GetOnAbcent()
         {
             var data = EmployeeService.GetOnAbsent();
             if (data != null)
@@ -77,8 +81,9 @@ namespace iBos___Employee.Controllers
                 return NotFound("No Record Found!");
             }
         }
-        [HttpGet]
-        public IActionResult GetByHierarchy(int id) 
+
+        [HttpGet("GetByHierarchy/{id}")] // Specify a unique route with a parameter
+        public IActionResult GetByHierarchy(int id)
         {
             var data = EmployeeService.GetEmployeeHierarchy(id);
             if (data != null)

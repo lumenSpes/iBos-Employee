@@ -13,7 +13,7 @@ namespace DAL.EF.Models
         public int Id { get; set; }
         [ForeignKey("Employee")]
         public int EmployeeId { get; set; }
-        public DateOnly AttendenceDate { get; set; }
+        public DateTime AttendenceDate { get; set; }
         public int IsPresent { get; set; }
         public int IsAbsent { get; set; }
         public int IsOffday { get; set; }
