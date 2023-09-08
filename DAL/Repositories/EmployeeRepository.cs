@@ -59,6 +59,13 @@ namespace DAL.Repositories
             {
                 return false;
             }
+
+            bool isSame = exObj.EmployeeCode == obj.EmployeeCode;
+            if (isSame)
+            {
+                return false;
+            }
+
             exObj.EmployeeName = obj.EmployeeName;
             exObj.EmployeeCode = obj.EmployeeCode;
 

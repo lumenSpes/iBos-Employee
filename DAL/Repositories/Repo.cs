@@ -13,7 +13,6 @@ namespace DAL.Repositories
         public DataContext db;
         public Repo()
         {
-            // Set up DbContextOptions for in-memory database
             var options = new DbContextOptionsBuilder<DataContext>()
                 .UseInMemoryDatabase(databaseName: "Employee")
                 .Options;

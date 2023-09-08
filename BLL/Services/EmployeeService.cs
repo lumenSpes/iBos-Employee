@@ -49,7 +49,7 @@ namespace BLL.Services
         public static EmployeeDTO Create(EmployeeDTO employee)
         {
             var existingEmployees = DataAccessFactory.EmployeeData().Get();
-            if (existingEmployees == null)
+            if (existingEmployees == null || !existingEmployees.Any())
             {
                 employee.EmployeeId = 502030;
             }

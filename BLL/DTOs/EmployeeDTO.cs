@@ -14,7 +14,6 @@ namespace BLL.DTOs
         public string EmployeeCode { get; set; }
         public int EmployeeSalary { get; set; }
         public int SupervisorId { get; set; }
-        public ICollection<EmployeeAttendence> EmployeeAttendence { get; set; }
 
     }
 }

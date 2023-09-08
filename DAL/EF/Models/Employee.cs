@@ -13,7 +13,11 @@ namespace DAL.EF.Models
         public string EmployeeCode { get; set;}
         public int EmployeeSalary { get; set; }
         public int SupervisorId { get; set; }
-        public ICollection<EmployeeAttendence> EmployeeAttendence { get; set; }
+        public virtual ICollection<EmployeeAttendence> EmployeeAttendence { get; set; }
 
+        public Employee()
+        {
+            EmployeeAttendence = new List<EmployeeAttendence>();
+        }
     }
 }
