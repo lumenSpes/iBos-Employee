@@ -51,7 +51,45 @@ namespace iBos___Employee.Controllers
                 return BadRequest("Please try again");
             }
         }
-
+        [HttpGet]
+        public IActionResult ThirdHighestSal() 
+        {
+            var data = EmployeeService.Get3rd();
+            if (data != null)
+            {
+                return Ok(data);
+            }
+            else
+            {
+                return NotFound("Nor Record Found!");
+            }
+        }
+        [HttpGet]
+        public IActionResult GetOnAbcent() 
+        {
+            var data = EmployeeService.GetOnAbsent();
+            if (data != null)
+            {
+                return Ok(data);
+            }
+            else
+            {
+                return NotFound("No Record Found!");
+            }
+        }
+        [HttpGet]
+        public IActionResult GetByHierarchy(int id) 
+        {
+            var data = EmployeeService.GetEmployeeHierarchy(id);
+            if (data != null)
+            {
+                return Ok(data);
+            }
+            else
+            {
+                return NotFound("No Record Found!");
+            }
+        }
 
     }
 }
