@@ -46,3 +46,4 @@ G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\refint\iBos - E
 G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.pdb
 G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\iBos - Employee.genruntimeconfig.cache
 G:\codes\adv c#\iBos - Employee\iBos - Employee\obj\Debug\net6.0\ref\iBos - Employee.dll
+G:\codes\adv c#\iBos - Employee\iBos - Employee\bin\Debug\net6.0\Newtonsoft.Json.dll

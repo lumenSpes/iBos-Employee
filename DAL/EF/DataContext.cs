@@ -10,9 +10,7 @@ namespace DAL.EF
 {
     public class DataContext : DbContext
     {
-        public DataContext()
-        {
-        }
+        
 
         public DataContext(DbContextOptions options) : base(options)
         {

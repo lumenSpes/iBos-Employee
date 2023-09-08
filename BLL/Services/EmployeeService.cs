@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BLL.DTOs;
 using DAL;
+using DAL.EF;
 using DAL.EF.Models;
 using Newtonsoft.Json;
 using System;
@@ -13,6 +14,7 @@ namespace BLL.Services
 {
     public class EmployeeService
     {
+
         public static List<EmployeeDTO> Get()
         {
             var data = DataAccessFactory.EmployeeData().Get();
@@ -46,6 +48,17 @@ namespace BLL.Services
 
         public static EmployeeDTO Create(EmployeeDTO employee)
         {
+            var existingEmployees = DataAccessFactory.EmployeeData().Get();
+            if (existingEmployees == null)
+            {
+                employee.EmployeeId = 502030;
+            }
+            else
+            {
+                int maxEmployeeId = existingEmployees.Max(x => x.EmployeeId);
+                employee.EmployeeId = maxEmployeeId + 1;
+            }
+
             var config = new MapperConfiguration(cfg => {
                 cfg.CreateMap<EmployeeDTO, Employee>();
                 cfg.CreateMap<Employee, EmployeeDTO>();
