@@ -43,14 +43,15 @@ namespace DAL.Repositories
         public List<Employee> GetOnAbsent()
         {
             var employeesWithNoAbsentRecords = db.Employees
-            .Where(employee =>
-                employee.EmployeeAttendence.All(attendance => attendance.IsAbsent == 0)
-            )
-            .OrderByDescending(employee => employee.EmployeeSalary)
-            .ToList();
+                .Where(employee =>
+                    !employee.EmployeeAttendence.Any(attendance => attendance.IsAbsent == 1)
+                )
+                .OrderByDescending(employee => employee.EmployeeSalary)
+                .ToList();
 
             return employeesWithNoAbsentRecords;
         }
+
 
         public bool Update(Employee obj)
         {
@@ -73,26 +74,38 @@ namespace DAL.Repositories
             return db.SaveChanges() > 0;
         }
 
-        List<string> IRepo<Employee, int, bool>.GetOnHierarchy(int id)
+        public List<string> GetOnHierarchy(int id)
         {
             var hierarchy = new List<string>();
+            var visitedIds = new HashSet<int>(); // To detect circular references
 
             while (id != 0)
             {
+                if (visitedIds.Contains(id))
+                {
+                    // Handle circular reference (e.g., throw an exception or log an error)
+                    break;
+                }
+
                 var employee = db.Employees.FirstOrDefault(e => e.EmployeeId == id);
 
                 if (employee == null)
                 {
-                    // Employee not found
-                    return null;
+                    // Handle employee not found (e.g., throw an exception or log an error)
+                    throw new Exception("Employee not found");
                 }
 
                 hierarchy.Add(employee.EmployeeName);
+                visitedIds.Add(id); // Mark the current employee as visited
                 id = employee.SupervisorId;
             }
 
-            hierarchy.Reverse(); // Reverse the hierarchy to get the correct order
+            // You may or may not need to reverse the hierarchy based on your database structure
+            // hierarchy.Reverse();
+
             return hierarchy;
         }
+
+
     }
 }
